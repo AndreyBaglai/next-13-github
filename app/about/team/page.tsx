@@ -1,9 +1,9 @@
 import React from "react";
 
-const About = () => {
+const Team = () => {
   return (
     <div>
-      <h1>About title</h1>
+      <h1>Team title</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
         saepe tempore eum debitis aliquam a voluptatum ratione quos blanditiis
@@ -16,4 +16,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Team;
