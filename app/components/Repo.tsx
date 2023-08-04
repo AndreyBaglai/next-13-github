@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
 
-const getRepo = async (name: string) => {
+const fetchRepo = async (name: string) => {
   const response = await fetch(
     `https://api.github.com/repos/AndreyBaglai/${name}`
   );
@@ -10,7 +10,7 @@ const getRepo = async (name: string) => {
 };
 
 const Repo = async ({ name }: any) => {
-  const repo = await getRepo(name);
+  const repo = await fetchRepo(name);
 
   return (
     <>
