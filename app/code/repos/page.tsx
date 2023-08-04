@@ -1,11 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
+import { resolve } from "path";
 
 const fetchRepos = async () => {
   const response = await fetch(
     "https://api.github.com/users/AndreyBaglai/repos"
   );
+
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+
   const repos = await response.json();
   return repos;
 };
