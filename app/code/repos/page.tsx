@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
-import { resolve } from "path";
 
 const fetchRepos = async () => {
   const response = await fetch(
@@ -14,7 +13,7 @@ const fetchRepos = async () => {
   return repos;
 };
 
-const Repos = async () => {
+const ReposPage = async () => {
   const repos = await fetchRepos();
 
   return (
@@ -45,4 +44,4 @@ const Repos = async () => {
   );
 };
 
-export default Repos;
+export default ReposPage;

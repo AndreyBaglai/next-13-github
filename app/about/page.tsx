@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "About Page Title",
 };
 
-const About = () => {
+const AboutPage = () => {
   return (
     <div>
       <h1>About title</h1>
@@ -21,4 +21,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;
