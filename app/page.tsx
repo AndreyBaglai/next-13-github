@@ -5,6 +5,7 @@ import Link from "next/link";
 import LoadingPage from "./loading";
 
 import Courses from "./components/Courses";
+import CourseSearch from "./components/CourseSearch";
 
 import { Course } from "./types";
 
@@ -30,6 +31,11 @@ const HomePage = () => {
   return (
     <>
       <h1>Some title</h1>
+      <CourseSearch
+        getSearchResults={(results: Course[]) => {
+          setCourses(results);
+        }}
+      />
       <Courses courses={courses} />
     </>
   );
